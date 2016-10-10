@@ -1,4 +1,4 @@
-# moblie
+# mobile
 my first moblie repository
 ## 在远程git服务器上创建一个代码仓库
 1. 点击repositories选项卡
