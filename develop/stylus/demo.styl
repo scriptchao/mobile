@@ -1,0 +1,138 @@
+*
+    margin 0
+    padding 0
+    line-height 1
+    font-family  "Microsoft Yahei", Arial
+a
+    text-decoration none
+    color inherit
+ul
+ol
+    list-style none
+em
+i
+    font-style normal
+page($scaleRate)
+    iconH=unit(23*$scaleRate,'px')
+    fotW=unit(41*$scaleRate,'px')
+    icon20($scaleRate)
+        display inline-block
+        width unit(22*$scaleRate,'px')
+        height @width
+        background-image url(../image/icon20.png)
+        background-size 100% auto
+    fot($scaleRate)
+        width unit(40*$scaleRate,'px')
+        height @width
+        background-size auto 100%
+        display inline-block
+        background-image url(../image/icon40.png)
+    header
+        height unit(40*$scaleRate,'px')
+        background-color rgb(57,58,63)
+        padding 0 unit(20*$scaleRate,'px') 0 unit(12*$scaleRate,'px')
+        span
+            color white
+            line-height @height
+        .icon20
+            icon20($scaleRate)
+            margin-top unit(9*$scaleRate,'px')
+            &.search
+                float right
+                background-position 0 0
+                margin-right unit(34*$scaleRate,'px')
+            &.add
+                float right
+                background-position 0 (- iconH)
+    .main
+        height unit(425*$scaleRate,'px')
+        background-color rgb(235,235,235)
+        overflow hidden
+        .friend
+            height unit(40*$scaleRate,'px')
+            background white
+            line-height @height
+            padding-left unit(20*$scaleRate,'px')
+            margin-top unit(16*$scaleRate,'px')
+            margin-bottom unit(16*$scaleRate,'px')
+            &:before
+                content ''
+                display inline-block
+                width unit(22*$scaleRate,'px')
+                height @width
+                background-image url(../image/icon.png)
+                background-size 100% 100%
+                vertical-align middle
+                margin-right unit(20*$scaleRate,'px')
+        .row
+            height unit(40*$scaleRate,'px')
+            background white
+            line-height @height
+            padding-left unit(20*$scaleRate,'px')
+            &:before
+                content ''
+                icon20($scaleRate)
+                vertical-align middle
+                margin-right unit(20*$scaleRate,'px')
+            &.sweep
+                &:before
+                    background-position 0 (- iconH*2)
+            &.swag
+                &:before
+                    background-position 0 (- iconH*3)
+            &.nearby
+                &:before
+                    background-position 0 (- iconH*4)
+            &.bottle
+                &:before
+                    background-position 0 (- iconH*5)
+            &.shop
+                &:before
+                    background-position 0 (- iconH*6)
+            &.game
+                &:before
+                    background-position 0 (- iconH*7)
+            &:nth-of-type(even)
+                margin-top unit(16*$scaleRate,'px')
+                position relative
+                &:after
+                    content ''
+                    position absolute
+                    background-color rgb(235,235,235)
+                    height unit(1*$scaleRate,'px')
+                    width unit(290*$scaleRate,'px')
+                    bottom unit(-0.5*$scaleRate,'px')
+                    left unit(15*$scaleRate,'px')
+    footer
+        height unit(48*$scaleRate,'px')
+        padding 0 0 0 unit(30*$scaleRate,'px')
+        overflow hidden
+        .fot
+            fot($scaleRate)
+            margin-top unit(5*$scaleRate,'px')
+            &.chat
+                background-position 0 0
+            &.address
+                background-position (- fotW) 0
+            &.find
+                background-position (- fotW*2) 0
+            &.mine
+                background-position (- fotW*3) 0
+            &:not(:last-of-type)
+                margin-right unit(30*$scaleRate,'px')
+/*iPhone5*/
+@media (min-width: 320px) and (max-width: 374px)
+    page(1)
+/*iPhone6*/
+@media (min-width: 375px) and (max-width: 413px)
+    page(375/320)
+/*iPhone plus*/
+@media (min-width: 414px)
+    page(414/320)
+
+
+
+
+
+
+
