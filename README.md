@@ -29,9 +29,10 @@ my first mobile repository
 5. cmd命令执行gulp
 
 ## 将本地c初始化好的整个i项目通过git推送至远程代码仓库
-0. `git pull`将远程代码仓库中修改的内容同步拉取至本地代码仓库
+
 1. 在git shell中使用`git add *`将项目中所有未被.gitignore的文件添加至即将上传至本地仓库的缓冲区
 2. `git status`查看缓冲区的即将被上传的文件
 3. （\*）`git reset`g如果发现`git add`操作j添加有误，可以使用此命令回退
 4. `git commit -m 'this is my first mobile project'`提交代码至本地并且书写提示注释
-5. `git push`提交代码至远程仓库
+5. `git pull`如果远程仓库进行了修改，才需要将远程代码仓库中修改的内容同步拉取至本地代码仓库
+6. `git push`提交代码至远程仓库
