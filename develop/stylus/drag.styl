@@ -1,0 +1,32 @@
+*
+    margin 0
+    padding 0
+    line-height 1
+    font-family  "Microsoft Yahei", Arial
+a
+    text-decoration none
+    color inherit
+ul
+ol
+    list-style none
+em
+i
+    font-style normal
+.box
+    position relative
+    margin 2rem auto 0
+    width 16rem
+    height 6rem
+    border 1px solid
+.taskBox
+    @extend .box
+    background red
+    z-index 1
+.dustbin
+    @extend .box
+    background green
+.task
+    position absolute
+    width 3rem
+    height @width
+    background greenyellow

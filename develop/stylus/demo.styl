@@ -28,12 +28,17 @@ page($scaleRate)
         display inline-block
         background-image url(../image/icon40.png)
     header
+        position fixed
+        width 100%
+        top 0
+        z-index 1
         height unit(40*$scaleRate,'px')
         background-color rgb(57,58,63)
-        padding 0 unit(20*$scaleRate,'px') 0 unit(12*$scaleRate,'px')
+        /*padding 0 unit(20*$scaleRate,'px') 0 unit(12*$scaleRate,'px')*/
         span
             color white
             line-height @height
+            margin-left unit(12*$scaleRate,'px')
         .icon20
             icon20($scaleRate)
             margin-top unit(9*$scaleRate,'px')
@@ -44,8 +49,11 @@ page($scaleRate)
             &.add
                 float right
                 background-position 0 (- iconH)
+                margin-right unit(20*$scaleRate,'px')
     .main
-        height unit(425*$scaleRate,'px')
+        position relative
+        top unit(40*$scaleRate,'px')
+        height unit(480*$scaleRate,'px')
         background-color rgb(235,235,235)
         overflow hidden
         .friend
@@ -104,9 +112,14 @@ page($scaleRate)
                     bottom unit(-0.5*$scaleRate,'px')
                     left unit(15*$scaleRate,'px')
     footer
+        position fixed
+        z-index 1
+        bottom 0
         height unit(48*$scaleRate,'px')
-        padding 0 0 0 unit(30*$scaleRate,'px')
+        padding 0 0 0 unit(29*$scaleRate,'px')
         overflow hidden
+        background white
+        width 100%
         .fot
             fot($scaleRate)
             margin-top unit(5*$scaleRate,'px')
@@ -118,7 +131,7 @@ page($scaleRate)
                 background-position (- fotW*2) 0
             &.mine
                 background-position (- fotW*3) 0
-            &:not(:last-of-type)
+            &:not(:last-child)
                 margin-right unit(30*$scaleRate,'px')
 /*iPhone5*/
 @media (min-width: 320px) and (max-width: 374px)
