@@ -5,6 +5,7 @@ window.onresize = function(){
     resize();
 };
 resize();
+<<<<<<< HEAD
 var i = 0,
     arrDiv = document.querySelectorAll('.fot');
     arrLen = arrDiv.length;
@@ -22,3 +23,5 @@ while(i < arrLen){
     i++;
 }
 //touchend事件触发时，dialog已经显示在页面的顶层，此时触发的click事件会变成dialog的click事件
+=======
+>>>>>>> e4e09c86a25c04912a44d0138d3c9056d05aa8f3
