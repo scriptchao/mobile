@@ -20,5 +20,6 @@ while(i < arrLen){
         console.log('touchend');
     });
     i++;
+    console.log('hello me')
 }
 //touchend事件触发时，dialog已经显示在页面的顶层，此时触发的click事件会变成dialog的click事件
