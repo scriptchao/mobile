@@ -131,32 +131,32 @@ var arr = [
         num : '10'
     },
     {
-        src : 'http://inews.gtimg.com/newsapp_ls/0/674145252_150120/0',
+        src : 'http://inews.gtimg.com/newsapp_ls/0/675062836_150120/0',
         title1 : '纳达尔：赛季基本已结束 我知道该如何找回胜利',
-        title2 : '近日，全明星探接到孙杨前女友李莹念身边知情人爆...',
+        title2 : '温格暗示枪手今年可夺冠：赢球不能只靠孩子...',
         icon : 'http://mat1.gtimg.com/www/mobi/image/flagicon.png',
-        num : '555'
+        num : '144'
     },
     {
-        src : 'http://inews.gtimg.com/newsapp_ls/0/673097688_150120/0',
-        title1 : '曝孙杨已有私生子 前女友独立将孩子抚养至2岁',
-        title2 : '近日，全明星探接到孙杨前女友李莹念身边知情人爆...',
+        src : 'http://inews.gtimg.com/newsapp_ls/0/674824848_150120/0',
+        title1 : '曝皇马送C罗五年新合同 年薪2300万欧超越梅西',
+        title2 : '曝皇马(数据)送C罗五年新合同年薪达2300万...',
         icon : 'http://mat1.gtimg.com/www/mobi/image/flagicon.png',
-        num : '333'
+        num : '101'
     },
     {
-        src : 'http://inews.gtimg.com/newsapp_ls/0/673428579_150120/0',
-        title1 : '曝孙杨已有私生子 前女友独立将孩子抚养至2岁',
-        title2 : '近日，全明星探接到孙杨前女友李莹念身边知情人爆...',
+        src : 'http://inews.gtimg.com/newsapp_ls/0/675065990_150120/0',
+        title1 : '泰国球迷讽国足：我们小组垫底 因为同组没有中国',
+        title2 : '中国球迷很伤心天前的失意夜晚，国足在塔什干遭遇...',
         icon : 'http://mat1.gtimg.com/www/mobi/image/flagicon.png',
-        num : '522'
+        num : '70'
     },
     {
-        src : 'http://inews.gtimg.com/newsapp_ls/0/674319713_150120/0',
-        title1 : '曝孙杨已有私生子 前女友独立将孩子抚养至2岁',
-        title2 : '近日，全明星探接到孙杨前女友李莹念身边知情人爆...',
+        src : 'http://inews.gtimg.com/newsapp_ls/0/674735999_150120/0',
+        title1 : '美媒：中国将培养3000万足球儿童 2050年击败巴西德国',
+        title2 : '参考消息网10月13日报道美媒称，在采煤城市太...',
         icon : 'http://mat1.gtimg.com/www/mobi/image/flagicon.png',
-        num : '666'
+        num : '1030'
     }
 ],
     arrLen = arr.length,
@@ -196,5 +196,22 @@ function add(option){
     li.appendChild(p);
     list.appendChild(li);
 }
+var more = document.querySelector('.last');
+more.addEventListener('touchend',function(){
+    console.log(666);
+    console.log((more.innerText = '加载中‥‥‥'));
+    console.log(!(more.classList.add('goIn')));
+    if(more.classList.contains('goMore')){
+        (more.innerText = '加载中‥‥‥') && !(more.classList.add('goIn')) && more.classList.remove('goMore');
+    }else{
+        more.classList.contains('goIn') && (more.innerText = '点击加载更多') && !(more.classList.add('goMore')) && more.classList.remove('goIn');
+    }
+});
+var hide = document.querySelector('.hide'),
+    banner = document.querySelector('.banner');
+hide.addEventListener('touchend',function(){
+    console.log(666);
+    banner.style.display = 'none';
+});
 
 
