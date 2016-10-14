@@ -15,6 +15,13 @@ i
     font-style normal
 .clearFix
     clear both
+img()
+    content ''
+    background-image url(../image/last.png)
+    width 100%
+    background-size auto 100%
+    height (22/16)rem
+    display inline-block
 .footer
     position relative
     width 100%
@@ -120,16 +127,82 @@ i
         font-size (14/16)rem
         line-height (30/16)rem
         color rgb(53, 53, 53)
+.rule
+    height (10/16)rem
+    width 100%
+    background rgb(238, 238, 238)
+.rule1
+    height (5/16)rem
+    width 100%
+    background rgb(238, 238, 238)
+.goods
+    overflow hidden
+    width 100%
+    .left
+        float left
+        width (120/16)rem
+        height 10rem
+        border-right 1px solid rgb(238, 238, 238)
+        background-image url(https://gw.alicdn.com/tps/i2/TB1nQXGJVXXXXcEXXXXKKOh2VXX-432-567.jpg_q50.jpg?imgtag=avatar)
+        background-size 100% 100%
+    .right
+        float right
+        width (200/16)rem
+        height 10rem
+        .goods1
+            width 100%
+            height 50%
+            border-bottom 1px solid rgb(238, 238, 238)
+            background-size 100% 100%
+            background-image url(../image/goods1.png)
+        goods()
+            width 50%
+            height 50%
+            background-size 100% 100%
+            float left
+        .goods2
+            goods()
+            border-right 1px solid rgb(238, 238, 238)
+            background-image url(http://img.alicdn.com/imgextra/i1/47/TB2M86rkpXXXXa6XXXXXXXXXXXX_!!2-subaru.png)
+        .goods3
+            goods()
+            background-image url(http://img.alicdn.com/imgextra/i2/78/TB2WvhzXnoX61Bjy1zkXXc75pXa_!!2-subaru.png)
+.scroll
+    width 100%
+    height (100/16)rem
+    background-image url(https://aecpm.alicdn.com/simba/img/TB1yUqWNFXXXXajXVXXSutbFXXX.jpg_q50.jpg)
+    background-size 100% 100%
+.last
+    width 100%
+    position fixed
+    bottom 0
+    padding-bottom (3/16)rem
 
-
-
-
-
-
-
-
-
-
+    li
+        width 20%
+        text-align center
+        font-size 0.82rem
+        color #5D656B
+        float left
+        &:first-child
+            &:before
+                img()
+        &:nth-child(2)
+            &:before
+                img()
+                background-position-x -100%
+        &:nth-child(3)
+            &:before
+                img()
+                background-position-x -200%
+        &:nth-child(4)
+            &:before
+                img()
+                background-position-x -300%
+        &:nth-child(5)
+            &:before
+                img()
+                background-position-x -400%
 
 
 

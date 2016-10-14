@@ -14,7 +14,10 @@ btn.addEventListener('touchend',function(){
 });
 var change = document.querySelector('.change'),
     arrText = ['size直播 | Star讲安东尼系','【36】这些客厅装饰都没','聪明懒女人想挑大件','选手机先选CPU!浅谈手机','三星手机或将有特别设计'],
-    lenText = arrText.length;
+    lenText = arrText.length,
+    i = 0;
 var timer = setInterval(function(){
-
-});
+    i++;
+    i == 5 ? i = 0 : i;
+    change.innerText = arrText[i]
+},1000);
